@@ -6,12 +6,29 @@ import Order from "./Order";
 import Fish from "./Fish";
 
 import sampleFishes from "../sample-fishes";
+import base from "../base";
 
 class App extends React.Component {
   state = {
     fishes: {},
     order: {},
   };
+
+  componentDidMount() {
+    const { params } = this.props.match;
+
+    // sync changes between <App />'s state & DB
+    this.ref = base.syncState(`${params.storeId}/fishes`, {
+      context: this,
+      state: "fishes",
+    });
+  }
+
+  componentWillUnmount() {
+    // unsubscribe from syncing state
+    // before unmounting
+    base.removeBinding(this.ref);
+  }
 
   addFish = fish => {
     // 1. Take a copy of the existing state
