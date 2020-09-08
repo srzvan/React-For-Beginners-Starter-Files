@@ -7,7 +7,7 @@ class StorePicker extends React.Component {
   storeNameInput = React.createRef();
 
   static propTypes = {
-    history: PropTypes.object,
+    history: PropTypes.object.isRequired,
   };
 
   goToStore = event => {

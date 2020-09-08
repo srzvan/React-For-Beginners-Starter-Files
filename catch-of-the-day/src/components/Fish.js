@@ -7,7 +7,7 @@ import { formatPrice } from "../helpers";
 class Fish extends React.Component {
   static propTypes = {
     details: fishType,
-    addToOrder: PropTypes.func,
+    addToOrder: PropTypes.func.isRequired,
   };
 
   render() {

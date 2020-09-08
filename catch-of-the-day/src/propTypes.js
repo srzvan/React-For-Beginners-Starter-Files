@@ -6,4 +6,4 @@ export const fishType = PropTypes.shape({
   desc: PropTypes.string,
   status: PropTypes.string,
   price: PropTypes.number,
-});
+}).isRequired;
