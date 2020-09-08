@@ -7,7 +7,7 @@ import { formatPrice } from "../helpers";
 class Order extends React.Component {
   static propTypes = {
     fishes: PropTypes.object.isRequired,
-    order: PropTypes.func.isRequired,
+    order: PropTypes.object.isRequired,
     removeFromOrder: PropTypes.func.isRequired,
   };
 
