@@ -1,3 +1,5 @@
+![Certificate of completion](https://imgur.com/0eMR7tS)
+
 ![](https://wes.io/dgAQ/content)
 
 # React For Beginners — [ReactForBeginners.com](https://ReactForBeginners.com)
