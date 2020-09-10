@@ -1,4 +1,4 @@
-![Certificate of completion](https://imgur.com/0eMR7tS)
+![Certificate of completion](https://i.imgur.com/0eMR7tS.png)
 
 ![](https://wes.io/dgAQ/content)
 
